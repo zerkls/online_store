@@ -1,4 +1,4 @@
-using System;
+п»їusing System;
 using System.Globalization;
 using System.Windows;
 using System.Windows.Data;
@@ -6,63 +6,63 @@ using System.Windows.Data;
 namespace ProjectStore.Converters;
 
 /// <summary>
-/// Конвертер для преобразования bool в Visibility и обратно
-/// Демонстрирует принцип инкапсуляции логики преобразования данных
+/// РљРѕРЅРІРµСЂС‚РµСЂ РґР»СЏ РїСЂРµРѕР±СЂР°Р·РѕРІР°РЅРёСЏ bool РІ Visibility Рё РѕР±СЂР°С‚РЅРѕ
+/// Р”РµРјРѕРЅСЃС‚СЂРёСЂСѓРµС‚ РїСЂРёРЅС†РёРї РёРЅРєР°РїСЃСѓР»СЏС†РёРё Р»РѕРіРёРєРё РїСЂРµРѕР±СЂР°Р·РѕРІР°РЅРёСЏ РґР°РЅРЅС‹С…
 /// </summary>
 public class BooleanToVisibilityConverter : IValueConverter
 {
     /// <summary>
-    /// Если true, инвертирует логику преобразования
+    /// Р•СЃР»Рё true, РёРЅРІРµСЂС‚РёСЂСѓРµС‚ Р»РѕРіРёРєСѓ РїСЂРµРѕР±СЂР°Р·РѕРІР°РЅРёСЏ
     /// </summary>
     public bool IsInverted { get; set; }
 
     /// <summary>
-    /// Если true, скрывает элемент вместо его коллапсирования
+    /// Р•СЃР»Рё true, СЃРєСЂС‹РІР°РµС‚ СЌР»РµРјРµРЅС‚ РІРјРµСЃС‚Рѕ РµРіРѕ РєРѕР»Р»Р°РїСЃРёСЂРѕРІР°РЅРёСЏ
     /// </summary>
     public bool UseHidden { get; set; }
 
     /// <summary>
-    /// Преобразует bool в Visibility
+    /// РџСЂРµРѕР±СЂР°Р·СѓРµС‚ bool РІ Visibility
     /// </summary>
-    /// <param name="value">bool значение</param>
-    /// <param name="targetType">Целевой тип</param>
-    /// <param name="parameter">Дополнительный параметр</param>
-    /// <param name="culture">Культура</param>
-    /// <returns>Visibility значение</returns>
+    /// <param name="value">bool Р·РЅР°С‡РµРЅРёРµ</param>
+    /// <param name="targetType">Р¦РµР»РµРІРѕР№ С‚РёРї</param>
+    /// <param name="parameter">Р”РѕРїРѕР»РЅРёС‚РµР»СЊРЅС‹Р№ РїР°СЂР°РјРµС‚СЂ</param>
+    /// <param name="culture">РљСѓР»СЊС‚СѓСЂР°</param>
+    /// <returns>Visibility Р·РЅР°С‡РµРЅРёРµ</returns>
     public object Convert(object value, Type targetType, object parameter, CultureInfo culture)
     {
         if (value is bool boolValue)
         {
-            // Инвертируем логику если нужно
+            // РРЅРІРµСЂС‚РёСЂСѓРµРј Р»РѕРіРёРєСѓ РµСЃР»Рё РЅСѓР¶РЅРѕ
             if (IsInverted)
             {
                 boolValue = !boolValue;
             }
 
-            // Возвращаем соответствующий Visibility
+            // Р’РѕР·РІСЂР°С‰Р°РµРј СЃРѕРѕС‚РІРµС‚СЃС‚РІСѓСЋС‰РёР№ Visibility
             return boolValue ? Visibility.Visible :
                 (UseHidden ? Visibility.Hidden : Visibility.Collapsed);
         }
 
-        // Если значение не bool, возвращаем Collapsed
+        // Р•СЃР»Рё Р·РЅР°С‡РµРЅРёРµ РЅРµ bool, РІРѕР·РІСЂР°С‰Р°РµРј Collapsed
         return UseHidden ? Visibility.Hidden : Visibility.Collapsed;
     }
 
     /// <summary>
-    /// Преобразует Visibility обратно в bool
+    /// РџСЂРµРѕР±СЂР°Р·СѓРµС‚ Visibility РѕР±СЂР°С‚РЅРѕ РІ bool
     /// </summary>
-    /// <param name="value">Visibility значение</param>
-    /// <param name="targetType">Целевой тип</param>
-    /// <param name="parameter">Дополнительный параметр</param>
-    /// <param name="culture">Культура</param>
-    /// <returns>bool значение</returns>
+    /// <param name="value">Visibility Р·РЅР°С‡РµРЅРёРµ</param>
+    /// <param name="targetType">Р¦РµР»РµРІРѕР№ С‚РёРї</param>
+    /// <param name="parameter">Р”РѕРїРѕР»РЅРёС‚РµР»СЊРЅС‹Р№ РїР°СЂР°РјРµС‚СЂ</param>
+    /// <param name="culture">РљСѓР»СЊС‚СѓСЂР°</param>
+    /// <returns>bool Р·РЅР°С‡РµРЅРёРµ</returns>
     public object ConvertBack(object value, Type targetType, object parameter, CultureInfo culture)
     {
         if (value is Visibility visibility)
         {
             bool result = visibility == Visibility.Visible;
 
-            // Инвертируем логику если нужно
+            // РРЅРІРµСЂС‚РёСЂСѓРµРј Р»РѕРіРёРєСѓ РµСЃР»Рё РЅСѓР¶РЅРѕ
             if (IsInverted)
             {
                 result = !result;

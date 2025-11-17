@@ -1,4 +1,4 @@
-using System;
+п»їusing System;
 using System.Globalization;
 using System.Windows.Data;
 using System.Windows.Media;
@@ -7,7 +7,7 @@ using ProjectStore.Models.Enums;
 namespace ProjectStore.Converters;
 
 /// <summary>
-/// Конвертер для преобразования статуса заказа в цвет
+/// РљРѕРЅРІРµСЂС‚РµСЂ РґР»СЏ РїСЂРµРѕР±СЂР°Р·РѕРІР°РЅРёСЏ СЃС‚Р°С‚СѓСЃР° Р·Р°РєР°Р·Р° РІ С†РІРµС‚
 /// </summary>
 public class OrderStatusToColorConverter : IValueConverter
 {
@@ -17,12 +17,12 @@ public class OrderStatusToColorConverter : IValueConverter
         {
             return status switch
             {
-                OrderStatus.Pending => new SolidColorBrush(Color.FromRgb(255, 193, 7)),     // Желтый
-                OrderStatus.Processing => new SolidColorBrush(Color.FromRgb(33, 150, 243)), // Синий
-                OrderStatus.Completed => new SolidColorBrush(Color.FromRgb(76, 175, 80)),   // Зеленый
-                OrderStatus.Cancelled => new SolidColorBrush(Color.FromRgb(244, 67, 54)),   // Красный
-                OrderStatus.Shipped => new SolidColorBrush(Color.FromRgb(156, 39, 176)),    // Фиолетовый
-                OrderStatus.PaymentFailed => new SolidColorBrush(Color.FromRgb(121, 85, 72)), // Коричневый
+                OrderStatus.Pending => new SolidColorBrush(Color.FromRgb(255, 193, 7)),     // Р–РµР»С‚С‹Р№
+                OrderStatus.Processing => new SolidColorBrush(Color.FromRgb(33, 150, 243)), // РЎРёРЅРёР№
+                OrderStatus.Completed => new SolidColorBrush(Color.FromRgb(76, 175, 80)),   // Р—РµР»РµРЅС‹Р№
+                OrderStatus.Cancelled => new SolidColorBrush(Color.FromRgb(244, 67, 54)),   // РљСЂР°СЃРЅС‹Р№
+                OrderStatus.Shipped => new SolidColorBrush(Color.FromRgb(156, 39, 176)),    // Р¤РёРѕР»РµС‚РѕРІС‹Р№
+                OrderStatus.PaymentFailed => new SolidColorBrush(Color.FromRgb(121, 85, 72)), // РљРѕСЂРёС‡РЅРµРІС‹Р№
                 _ => new SolidColorBrush(Colors.Gray)
             };
         }

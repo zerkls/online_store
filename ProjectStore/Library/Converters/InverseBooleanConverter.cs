@@ -1,12 +1,12 @@
-using System;
+п»їusing System;
 using System.Globalization;
 using System.Windows.Data;
 
 namespace ProjectStore.Converters;
 
 /// <summary>
-/// Конвертер для инвертирования bool значений
-/// Демонстрирует принцип повторного использования кода через конвертеры
+/// РљРѕРЅРІРµСЂС‚РµСЂ РґР»СЏ РёРЅРІРµСЂС‚РёСЂРѕРІР°РЅРёСЏ bool Р·РЅР°С‡РµРЅРёР№
+/// Р”РµРјРѕРЅСЃС‚СЂРёСЂСѓРµС‚ РїСЂРёРЅС†РёРї РїРѕРІС‚РѕСЂРЅРѕРіРѕ РёСЃРїРѕР»СЊР·РѕРІР°РЅРёСЏ РєРѕРґР° С‡РµСЂРµР· РєРѕРЅРІРµСЂС‚РµСЂС‹
 /// </summary>
 public class InverseBooleanConverter : IValueConverter
 {
