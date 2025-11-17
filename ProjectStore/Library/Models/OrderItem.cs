@@ -1,9 +1,9 @@
-using System.ComponentModel;
+п»їusing System.ComponentModel;
 using System.Runtime.CompilerServices;
 
 namespace WpfShopApp.Models;
 /// <summary>
-/// Элемент заказа - демонстрирует композицию
+/// Р­Р»РµРјРµРЅС‚ Р·Р°РєР°Р·Р° - РґРµРјРѕРЅСЃС‚СЂРёСЂСѓРµС‚ РєРѕРјРїРѕР·РёС†РёСЋ
 /// </summary>
 public class OrderItem : INotifyPropertyChanged
 {
@@ -33,11 +33,11 @@ public class OrderItem : INotifyPropertyChanged
         }
     }
     /// <summary>
-    /// Цена за единицу (делегирование к Product)
+    /// Р¦РµРЅР° Р·Р° РµРґРёРЅРёС†Сѓ (РґРµР»РµРіРёСЂРѕРІР°РЅРёРµ Рє Product)
     /// </summary>
     public decimal UnitPrice => Product?.Price ?? 0;
     /// <summary>
-    /// Общая стоимость позиции
+    /// РћР±С‰Р°СЏ СЃС‚РѕРёРјРѕСЃС‚СЊ РїРѕР·РёС†РёРё
     /// </summary>
     public decimal TotalPrice => UnitPrice * Quantity;
 
@@ -49,14 +49,14 @@ public class OrderItem : INotifyPropertyChanged
         Quantity = quantity;
     }
     /// <summary>
-    /// Увеличить количество
+    /// РЈРІРµР»РёС‡РёС‚СЊ РєРѕР»РёС‡РµСЃС‚РІРѕ
     /// </summary>
     public void IncreaseQuantity(int amount = 1)
     {
         Quantity += amount;
     }
     /// <summary>
-    /// Уменьшить количество
+    /// РЈРјРµРЅСЊС€РёС‚СЊ РєРѕР»РёС‡РµСЃС‚РІРѕ
     /// </summary>
     public bool DecreaseQuantity(int amount = 1)
     {
@@ -71,9 +71,9 @@ public class OrderItem : INotifyPropertyChanged
     public string DisplayInfo => $"{Product?.Name} x {Quantity} = {TotalPrice:C}";
 
     public string DetailedInfo => $"{Product?.Name}\n" +
-                                 $"Количество: {Quantity}\n" +
-                                 $"Цена: {UnitPrice:C}\n" +
-                                 $"Итого: {TotalPrice:C}";
+                                 $"РљРѕР»РёС‡РµСЃС‚РІРѕ: {Quantity}\n" +
+                                 $"Р¦РµРЅР°: {UnitPrice:C}\n" +
+                                 $"РС‚РѕРіРѕ: {TotalPrice:C}";
 
     public override string ToString()
     {

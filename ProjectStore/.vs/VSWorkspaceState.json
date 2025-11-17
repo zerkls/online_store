@@ -1,7 +1,8 @@
 {
   "ExpandedNodes": [
     "",
-    "\\Library"
+    "\\Library",
+    "\\Library\\ViewModels"
   ],
   "SelectedNode": "\\Library\\WpfShopApp.csproj",
   "PreviewInSolutionExplorer": false

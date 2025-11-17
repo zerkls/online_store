@@ -1,4 +1,4 @@
-using System;
+п»їusing System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.ComponentModel;
@@ -51,7 +51,7 @@ public class Order : Entity, INotifyPropertyChanged
     }
 
     /// <summary>
-    /// Элементы заказа (композиция)
+    /// Р­Р»РµРјРµРЅС‚С‹ Р·Р°РєР°Р·Р° (РєРѕРјРїРѕР·РёС†РёСЏ)
     /// </summary>
     public ObservableCollection<OrderItem> Items { get; private set; }
 
@@ -66,27 +66,27 @@ public class Order : Entity, INotifyPropertyChanged
     }
 
     /// <summary>
-    /// Общая стоимость без скидки
+    /// РћР±С‰Р°СЏ СЃС‚РѕРёРјРѕСЃС‚СЊ Р±РµР· СЃРєРёРґРєРё
     /// </summary>
     public decimal Subtotal => Items.Sum(item => item.TotalPrice);
 
     /// <summary>
-    /// Размер скидки (инкапсуляция логики расчета)
+    /// Р Р°Р·РјРµСЂ СЃРєРёРґРєРё (РёРЅРєР°РїСЃСѓР»СЏС†РёСЏ Р»РѕРіРёРєРё СЂР°СЃС‡РµС‚Р°)
     /// </summary>
     public decimal DiscountAmount => CalculateDiscount();
 
     /// <summary>
-    /// Итоговая стоимость
+    /// РС‚РѕРіРѕРІР°СЏ СЃС‚РѕРёРјРѕСЃС‚СЊ
     /// </summary>
     public decimal TotalAmount => Subtotal - DiscountAmount;
 
     /// <summary>
-    /// Описание статуса заказа
+    /// РћРїРёСЃР°РЅРёРµ СЃС‚Р°С‚СѓСЃР° Р·Р°РєР°Р·Р°
     /// </summary>
     public string StatusDescription => GetStatusDescription();
 
     /// <summary>
-    /// Можно ли отменить заказ
+    /// РњРѕР¶РЅРѕ Р»Рё РѕС‚РјРµРЅРёС‚СЊ Р·Р°РєР°Р·
     /// </summary>
     public bool CanBeCancelled => Status == OrderStatus.Pending ||
                                  Status == OrderStatus.Processing ||
@@ -113,7 +113,7 @@ public class Order : Entity, INotifyPropertyChanged
     }
 
     /// </summary>
-    /// Добавить товар в заказ
+    /// Р”РѕР±Р°РІРёС‚СЊ С‚РѕРІР°СЂ РІ Р·Р°РєР°Р·
     /// </summary>
     public bool AddItem(Product product, int quantity)
     {
@@ -137,7 +137,7 @@ public class Order : Entity, INotifyPropertyChanged
     }
 
     /// <summary>
-    /// Удалить товар из заказа
+    /// РЈРґР°Р»РёС‚СЊ С‚РѕРІР°СЂ РёР· Р·Р°РєР°Р·Р°
     /// </summary>
     public bool RemoveItem(int productId)
     {
@@ -151,21 +151,21 @@ public class Order : Entity, INotifyPropertyChanged
     }
 
     /// <summary>
-    /// Расчет скидки 
+    /// Р Р°СЃС‡РµС‚ СЃРєРёРґРєРё 
     /// </summary>
     private decimal CalculateDiscount()
     {
         decimal discount = 0;
 
         /// <summary>
-        /// Скидка 10% для заказов свыше 5000 руб.
+        /// РЎРєРёРґРєР° 10% РґР»СЏ Р·Р°РєР°Р·РѕРІ СЃРІС‹С€Рµ 5000 СЂСѓР±.
         /// </summary>
         if (Subtotal > 5000)
         {
             discount += Subtotal * 0.1m;
         }
         /// <summary>
-        /// Дополнительная скидка 5% для постоянных клиентов
+        /// Р”РѕРїРѕР»РЅРёС‚РµР»СЊРЅР°СЏ СЃРєРёРґРєР° 5% РґР»СЏ РїРѕСЃС‚РѕСЏРЅРЅС‹С… РєР»РёРµРЅС‚РѕРІ
         /// <summary>
         if (Customer?.IsRegularCustomer == true)
         {
@@ -173,53 +173,53 @@ public class Order : Entity, INotifyPropertyChanged
         }
 
         /// <summary>
-        /// Максимальная скидка не более 30%
+        /// РњР°РєСЃРёРјР°Р»СЊРЅР°СЏ СЃРєРёРґРєР° РЅРµ Р±РѕР»РµРµ 30%
         /// <summary>
         decimal maxDiscount = Subtotal * 0.3m;
         return Math.Min(discount, maxDiscount);
     }
 
     /// <summary>
-    /// Получить описание статуса
+    /// РџРѕР»СѓС‡РёС‚СЊ РѕРїРёСЃР°РЅРёРµ СЃС‚Р°С‚СѓСЃР°
     /// </summary>
     private string GetStatusDescription()
     {
         return Status switch
         {
-            OrderStatus.Pending => "Ожидает обработки",
-            OrderStatus.Processing => "В обработке",
-            OrderStatus.Completed => "Завершен",
-            OrderStatus.Cancelled => "Отменен",
-            OrderStatus.Shipped => "Отправлен",
-            OrderStatus.PaymentFailed => "Ошибка оплаты",
-            _ => "Неизвестный статус"
+            OrderStatus.Pending => "РћР¶РёРґР°РµС‚ РѕР±СЂР°Р±РѕС‚РєРё",
+            OrderStatus.Processing => "Р’ РѕР±СЂР°Р±РѕС‚РєРµ",
+            OrderStatus.Completed => "Р—Р°РІРµСЂС€РµРЅ",
+            OrderStatus.Cancelled => "РћС‚РјРµРЅРµРЅ",
+            OrderStatus.Shipped => "РћС‚РїСЂР°РІР»РµРЅ",
+            OrderStatus.PaymentFailed => "РћС€РёР±РєР° РѕРїР»Р°С‚С‹",
+            _ => "РќРµРёР·РІРµСЃС‚РЅС‹Р№ СЃС‚Р°С‚СѓСЃ"
         };
     }
 
     /// <summary>
-    /// Получить информацию о заказе
+    /// РџРѕР»СѓС‡РёС‚СЊ РёРЅС„РѕСЂРјР°С†РёСЋ Рѕ Р·Р°РєР°Р·Рµ
     /// </summary>
     public string GetOrderInfo()
     {
-        return $"Заказ #{Id} от {OrderDate:dd.MM.yyyy} - {TotalAmount:C} ({StatusDescription})";
+        return $"Р—Р°РєР°Р· #{Id} РѕС‚ {OrderDate:dd.MM.yyyy} - {TotalAmount:C} ({StatusDescription})";
     }
 
     /// <summary>
-    /// Получить детальную информацию о заказе
+    /// РџРѕР»СѓС‡РёС‚СЊ РґРµС‚Р°Р»СЊРЅСѓСЋ РёРЅС„РѕСЂРјР°С†РёСЋ Рѕ Р·Р°РєР°Р·Рµ
     /// </summary>
     public string GetDetailedInfo()
     {
         var itemsInfo = string.Join("\n", Items.Select(item => $"  {item.DetailedInfo}"));
 
-        return $"Заказ #{Id}\n" +
-               $"Дата: {OrderDate:dd.MM.yyyy HH:mm}\n" +
-               $"Статус: {StatusDescription}\n" +
-               $"Покупатель: {Customer?.Name}\n" +
-               $"Способ оплаты: {PaymentMethod?.GetPaymentMethodName() ?? "Не выбран"}\n\n" +
-               $"Состав заказа:\n{itemsInfo}\n\n" +
-               $"Подитог: {Subtotal:C}\n" +
-               $"Скидка: {DiscountAmount:C}\n" +
-               $"ИТОГО: {TotalAmount:C}";
+        return $"Р—Р°РєР°Р· #{Id}\n" +
+               $"Р”Р°С‚Р°: {OrderDate:dd.MM.yyyy HH:mm}\n" +
+               $"РЎС‚Р°С‚СѓСЃ: {StatusDescription}\n" +
+               $"РџРѕРєСѓРїР°С‚РµР»СЊ: {Customer?.Name}\n" +
+               $"РЎРїРѕСЃРѕР± РѕРїР»Р°С‚С‹: {PaymentMethod?.GetPaymentMethodName() ?? "РќРµ РІС‹Р±СЂР°РЅ"}\n\n" +
+               $"РЎРѕСЃС‚Р°РІ Р·Р°РєР°Р·Р°:\n{itemsInfo}\n\n" +
+               $"РџРѕРґРёС‚РѕРі: {Subtotal:C}\n" +
+               $"РЎРєРёРґРєР°: {DiscountAmount:C}\n" +
+               $"РРўРћР“Рћ: {TotalAmount:C}";
     }
 
     public override string ToString()
@@ -236,7 +236,7 @@ public class Order : Entity, INotifyPropertyChanged
     public bool ProcessOrder()
     {
         /// </summary>
-        /// Проверка доступности товаров
+        /// РџСЂРѕРІРµСЂРєР° РґРѕСЃС‚СѓРїРЅРѕСЃС‚Рё С‚РѕРІР°СЂРѕРІ
         /// </summary>
         foreach (var item in Items)
         {
@@ -247,14 +247,14 @@ public class Order : Entity, INotifyPropertyChanged
             }
         }
         /// </summary>
-        /// Резервирование товаров
+        /// Р РµР·РµСЂРІРёСЂРѕРІР°РЅРёРµ С‚РѕРІР°СЂРѕРІ
         /// </summary>
         foreach (var item in Items)
         {
             item.Product.StockQuantity -= item.Quantity;
         }
         /// </summary>
-        /// Обработка оплаты
+        /// РћР±СЂР°Р±РѕС‚РєР° РѕРїР»Р°С‚С‹
         /// </summary>
         if (PaymentMethod.ProcessPayment(TotalAmount))
         {
@@ -264,7 +264,7 @@ public class Order : Entity, INotifyPropertyChanged
         else
         {
             /// </summary>
-            /// Возврат товаров при неудачной оплате
+            /// Р’РѕР·РІСЂР°С‚ С‚РѕРІР°СЂРѕРІ РїСЂРё РЅРµСѓРґР°С‡РЅРѕР№ РѕРїР»Р°С‚Рµ
             /// </summary>
             foreach (var item in Items)
             {
@@ -280,7 +280,7 @@ public class Order : Entity, INotifyPropertyChanged
         if (Status != OrderStatus.Completed && Status != OrderStatus.Processing)
             return false;
         /// </summary>
-        /// Возврат товаров на склад
+        /// Р’РѕР·РІСЂР°С‚ С‚РѕРІР°СЂРѕРІ РЅР° СЃРєР»Р°Рґ
         /// </summary>
         foreach (var item in Items)
         {

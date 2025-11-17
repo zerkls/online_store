@@ -6,13 +6,13 @@
              StartupUri="Views/MainWindow.xaml">
 
     <Application.Resources>
-        <!-- Êîíâåðòåðû äëÿ ïðèâÿçêè äàííûõ -->
+        <!-- ÐšÐ¾Ð½Ð²ÐµÑ€Ñ‚ÐµÑ€Ñ‹ Ð´Ð»Ñ Ð¿Ñ€Ð¸Ð²ÑÐ·ÐºÐ¸ Ð´Ð°Ð½Ð½Ñ‹Ñ… -->
         <conv:BooleanToVisibilityConverter x:Key="BoolToVisibility"/>
         <conv:BooleanToVisibilityConverter x:Key="InvertedBoolToVisibility" IsInverted="True"/>
         <conv:InverseBooleanConverter x:Key="InverseBool"/>
         <conv:OrderStatusToColorConverter x:Key="OrderStatusToColor"/>
 
-        <!-- Îñíîâíîé ñòèëü äëÿ êíîïîê -->
+        <!-- ÐžÑÐ½Ð¾Ð²Ð½Ð¾Ð¹ ÑÑ‚Ð¸Ð»ÑŒ Ð´Ð»Ñ ÐºÐ½Ð¾Ð¿Ð¾Ðº -->
         <Style x:Key="ModernButtonStyle" TargetType="Button">
             <Setter Property="BorderThickness" Value="0"/>
             <Setter Property="Cursor" Value="Hand"/>

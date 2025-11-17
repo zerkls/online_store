@@ -3,8 +3,56 @@
   "WorkspaceRootPath": "C:\\Users\\TechProfit.ru\\Desktop\\\u043A\u0443\u0440\u0441\u043E\u0432\u0430\u044F_\u0440\u0430\u0431\u043E\u0442\u0430\\online_store\\ProjectStore\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\TechProfit.ru\\Desktop\\\u043A\u0443\u0440\u0441\u043E\u0432\u0430\u044F_\u0440\u0430\u0431\u043E\u0442\u0430\\online_store\\ProjectStore\\Library\\Models\\Enums\\OrderStatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Library\\Models\\Enums\\OrderStatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\TechProfit.ru\\Desktop\\\u043A\u0443\u0440\u0441\u043E\u0432\u0430\u044F_\u0440\u0430\u0431\u043E\u0442\u0430\\online_store\\ProjectStore\\Library\\WpfShopApp.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Library\\WpfShopApp.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\TechProfit.ru\\Desktop\\\u043A\u0443\u0440\u0441\u043E\u0432\u0430\u044F_\u0440\u0430\u0431\u043E\u0442\u0430\\online_store\\ProjectStore\\Library\\App.xaml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Library\\App.xaml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\TechProfit.ru\\Desktop\\\u043A\u0443\u0440\u0441\u043E\u0432\u0430\u044F_\u0440\u0430\u0431\u043E\u0442\u0430\\online_store\\ProjectStore\\Library\\ViewModels\\RelayCommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Library\\ViewModels\\RelayCommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\TechProfit.ru\\Desktop\\\u043A\u0443\u0440\u0441\u043E\u0432\u0430\u044F_\u0440\u0430\u0431\u043E\u0442\u0430\\online_store\\ProjectStore\\Library\\ViewModels\\OrdersViewModel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Library\\ViewModels\\OrdersViewModel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\TechProfit.ru\\Desktop\\\u043A\u0443\u0440\u0441\u043E\u0432\u0430\u044F_\u0440\u0430\u0431\u043E\u0442\u0430\\online_store\\ProjectStore\\Library\\ViewModels\\CheckoutViewModel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Library\\ViewModels\\CheckoutViewModel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\TechProfit.ru\\Desktop\\\u043A\u0443\u0440\u0441\u043E\u0432\u0430\u044F_\u0440\u0430\u0431\u043E\u0442\u0430\\online_store\\ProjectStore\\Library\\ViewModels\\MainViewModel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Library\\ViewModels\\MainViewModel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\TechProfit.ru\\Desktop\\\u043A\u0443\u0440\u0441\u043E\u0432\u0430\u044F_\u0440\u0430\u0431\u043E\u0442\u0430\\online_store\\ProjectStore\\Library\\Models\\Product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Library\\Models\\Product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\TechProfit.ru\\Desktop\\\u043A\u0443\u0440\u0441\u043E\u0432\u0430\u044F_\u0440\u0430\u0431\u043E\u0442\u0430\\online_store\\ProjectStore\\Library\\Models\\OrderItem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Library\\Models\\OrderItem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\TechProfit.ru\\Desktop\\\u043A\u0443\u0440\u0441\u043E\u0432\u0430\u044F_\u0440\u0430\u0431\u043E\u0442\u0430\\online_store\\ProjectStore\\Library\\Models\\Order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Library\\Models\\Order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\TechProfit.ru\\Desktop\\\u043A\u0443\u0440\u0441\u043E\u0432\u0430\u044F_\u0440\u0430\u0431\u043E\u0442\u0430\\online_store\\ProjectStore\\Library\\Models\\Entity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Library\\Models\\Entity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\TechProfit.ru\\Desktop\\\u043A\u0443\u0440\u0441\u043E\u0432\u0430\u044F_\u0440\u0430\u0431\u043E\u0442\u0430\\online_store\\ProjectStore\\Library\\Models\\Customer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Library\\Models\\Customer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\TechProfit.ru\\Desktop\\\u043A\u0443\u0440\u0441\u043E\u0432\u0430\u044F_\u0440\u0430\u0431\u043E\u0442\u0430\\online_store\\ProjectStore\\Library\\Models\\Category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Library\\Models\\Category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -27,15 +75,160 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "OrderStatus.cs",
+              "DocumentMoniker": "C:\\Users\\TechProfit.ru\\Desktop\\\u043A\u0443\u0440\u0441\u043E\u0432\u0430\u044F_\u0440\u0430\u0431\u043E\u0442\u0430\\online_store\\ProjectStore\\Library\\Models\\Enums\\OrderStatus.cs",
+              "RelativeDocumentMoniker": "Library\\Models\\Enums\\OrderStatus.cs",
+              "ToolTip": "C:\\Users\\TechProfit.ru\\Desktop\\\u043A\u0443\u0440\u0441\u043E\u0432\u0430\u044F_\u0440\u0430\u0431\u043E\u0442\u0430\\online_store\\ProjectStore\\Library\\Models\\Enums\\OrderStatus.cs",
+              "RelativeToolTip": "Library\\Models\\Enums\\OrderStatus.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-17T09:24:12.591Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "WpfShopApp.csproj",
+              "DocumentMoniker": "C:\\Users\\TechProfit.ru\\Desktop\\\u043A\u0443\u0440\u0441\u043E\u0432\u0430\u044F_\u0440\u0430\u0431\u043E\u0442\u0430\\online_store\\ProjectStore\\Library\\WpfShopApp.csproj",
+              "RelativeDocumentMoniker": "Library\\WpfShopApp.csproj",
+              "ToolTip": "C:\\Users\\TechProfit.ru\\Desktop\\\u043A\u0443\u0440\u0441\u043E\u0432\u0430\u044F_\u0440\u0430\u0431\u043E\u0442\u0430\\online_store\\ProjectStore\\Library\\WpfShopApp.csproj",
+              "RelativeToolTip": "Library\\WpfShopApp.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-11-17T09:17:23.084Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "App.xaml",
+              "DocumentMoniker": "C:\\Users\\TechProfit.ru\\Desktop\\\u043A\u0443\u0440\u0441\u043E\u0432\u0430\u044F_\u0440\u0430\u0431\u043E\u0442\u0430\\online_store\\ProjectStore\\Library\\App.xaml",
+              "RelativeDocumentMoniker": "Library\\App.xaml",
+              "ToolTip": "C:\\Users\\TechProfit.ru\\Desktop\\\u043A\u0443\u0440\u0441\u043E\u0432\u0430\u044F_\u0440\u0430\u0431\u043E\u0442\u0430\\online_store\\ProjectStore\\Library\\App.xaml",
+              "RelativeToolTip": "Library\\App.xaml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-11-17T09:17:19.972Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "RelayCommand.cs",
               "DocumentMoniker": "C:\\Users\\TechProfit.ru\\Desktop\\\u043A\u0443\u0440\u0441\u043E\u0432\u0430\u044F_\u0440\u0430\u0431\u043E\u0442\u0430\\online_store\\ProjectStore\\Library\\ViewModels\\RelayCommand.cs",
               "RelativeDocumentMoniker": "Library\\ViewModels\\RelayCommand.cs",
               "ToolTip": "C:\\Users\\TechProfit.ru\\Desktop\\\u043A\u0443\u0440\u0441\u043E\u0432\u0430\u044F_\u0440\u0430\u0431\u043E\u0442\u0430\\online_store\\ProjectStore\\Library\\ViewModels\\RelayCommand.cs",
               "RelativeToolTip": "Library\\ViewModels\\RelayCommand.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-17T08:06:30.593Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-17T09:17:17.752Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "OrdersViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\TechProfit.ru\\Desktop\\\u043A\u0443\u0440\u0441\u043E\u0432\u0430\u044F_\u0440\u0430\u0431\u043E\u0442\u0430\\online_store\\ProjectStore\\Library\\ViewModels\\OrdersViewModel.cs",
+              "RelativeDocumentMoniker": "Library\\ViewModels\\OrdersViewModel.cs",
+              "ToolTip": "C:\\Users\\TechProfit.ru\\Desktop\\\u043A\u0443\u0440\u0441\u043E\u0432\u0430\u044F_\u0440\u0430\u0431\u043E\u0442\u0430\\online_store\\ProjectStore\\Library\\ViewModels\\OrdersViewModel.cs",
+              "RelativeToolTip": "Library\\ViewModels\\OrdersViewModel.cs",
+              "ViewState": "AgIAAC0AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-17T09:17:14.277Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "MainViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\TechProfit.ru\\Desktop\\\u043A\u0443\u0440\u0441\u043E\u0432\u0430\u044F_\u0440\u0430\u0431\u043E\u0442\u0430\\online_store\\ProjectStore\\Library\\ViewModels\\MainViewModel.cs",
+              "RelativeDocumentMoniker": "Library\\ViewModels\\MainViewModel.cs",
+              "ToolTip": "C:\\Users\\TechProfit.ru\\Desktop\\\u043A\u0443\u0440\u0441\u043E\u0432\u0430\u044F_\u0440\u0430\u0431\u043E\u0442\u0430\\online_store\\ProjectStore\\Library\\ViewModels\\MainViewModel.cs",
+              "RelativeToolTip": "Library\\ViewModels\\MainViewModel.cs",
+              "ViewState": "AgIAAGUBAAAAAAAAAAAAAH0BAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-17T09:14:29.164Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "CheckoutViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\TechProfit.ru\\Desktop\\\u043A\u0443\u0440\u0441\u043E\u0432\u0430\u044F_\u0440\u0430\u0431\u043E\u0442\u0430\\online_store\\ProjectStore\\Library\\ViewModels\\CheckoutViewModel.cs",
+              "RelativeDocumentMoniker": "Library\\ViewModels\\CheckoutViewModel.cs",
+              "ToolTip": "C:\\Users\\TechProfit.ru\\Desktop\\\u043A\u0443\u0440\u0441\u043E\u0432\u0430\u044F_\u0440\u0430\u0431\u043E\u0442\u0430\\online_store\\ProjectStore\\Library\\ViewModels\\CheckoutViewModel.cs",
+              "RelativeToolTip": "Library\\ViewModels\\CheckoutViewModel.cs",
+              "ViewState": "AgIAAIcAAAAAAAAAAAAAAKcAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-17T09:12:51.858Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Product.cs",
+              "DocumentMoniker": "C:\\Users\\TechProfit.ru\\Desktop\\\u043A\u0443\u0440\u0441\u043E\u0432\u0430\u044F_\u0440\u0430\u0431\u043E\u0442\u0430\\online_store\\ProjectStore\\Library\\Models\\Product.cs",
+              "RelativeDocumentMoniker": "Library\\Models\\Product.cs",
+              "ToolTip": "C:\\Users\\TechProfit.ru\\Desktop\\\u043A\u0443\u0440\u0441\u043E\u0432\u0430\u044F_\u0440\u0430\u0431\u043E\u0442\u0430\\online_store\\ProjectStore\\Library\\Models\\Product.cs",
+              "RelativeToolTip": "Library\\Models\\Product.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-17T09:12:46.76Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "OrderItem.cs",
+              "DocumentMoniker": "C:\\Users\\TechProfit.ru\\Desktop\\\u043A\u0443\u0440\u0441\u043E\u0432\u0430\u044F_\u0440\u0430\u0431\u043E\u0442\u0430\\online_store\\ProjectStore\\Library\\Models\\OrderItem.cs",
+              "RelativeDocumentMoniker": "Library\\Models\\OrderItem.cs",
+              "ToolTip": "C:\\Users\\TechProfit.ru\\Desktop\\\u043A\u0443\u0440\u0441\u043E\u0432\u0430\u044F_\u0440\u0430\u0431\u043E\u0442\u0430\\online_store\\ProjectStore\\Library\\Models\\OrderItem.cs",
+              "RelativeToolTip": "Library\\Models\\OrderItem.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADsAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-17T09:11:44.576Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Order.cs",
+              "DocumentMoniker": "C:\\Users\\TechProfit.ru\\Desktop\\\u043A\u0443\u0440\u0441\u043E\u0432\u0430\u044F_\u0440\u0430\u0431\u043E\u0442\u0430\\online_store\\ProjectStore\\Library\\Models\\Order.cs",
+              "RelativeDocumentMoniker": "Library\\Models\\Order.cs",
+              "ToolTip": "C:\\Users\\TechProfit.ru\\Desktop\\\u043A\u0443\u0440\u0441\u043E\u0432\u0430\u044F_\u0440\u0430\u0431\u043E\u0442\u0430\\online_store\\ProjectStore\\Library\\Models\\Order.cs",
+              "RelativeToolTip": "Library\\Models\\Order.cs",
+              "ViewState": "AgIAAAIBAAAAAAAAAAAAABsBAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-17T09:06:10.403Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Entity.cs",
+              "DocumentMoniker": "C:\\Users\\TechProfit.ru\\Desktop\\\u043A\u0443\u0440\u0441\u043E\u0432\u0430\u044F_\u0440\u0430\u0431\u043E\u0442\u0430\\online_store\\ProjectStore\\Library\\Models\\Entity.cs",
+              "RelativeDocumentMoniker": "Library\\Models\\Entity.cs",
+              "ToolTip": "C:\\Users\\TechProfit.ru\\Desktop\\\u043A\u0443\u0440\u0441\u043E\u0432\u0430\u044F_\u0440\u0430\u0431\u043E\u0442\u0430\\online_store\\ProjectStore\\Library\\Models\\Entity.cs",
+              "RelativeToolTip": "Library\\Models\\Entity.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-17T09:06:08.782Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Customer.cs",
+              "DocumentMoniker": "C:\\Users\\TechProfit.ru\\Desktop\\\u043A\u0443\u0440\u0441\u043E\u0432\u0430\u044F_\u0440\u0430\u0431\u043E\u0442\u0430\\online_store\\ProjectStore\\Library\\Models\\Customer.cs",
+              "RelativeDocumentMoniker": "Library\\Models\\Customer.cs",
+              "ToolTip": "C:\\Users\\TechProfit.ru\\Desktop\\\u043A\u0443\u0440\u0441\u043E\u0432\u0430\u044F_\u0440\u0430\u0431\u043E\u0442\u0430\\online_store\\ProjectStore\\Library\\Models\\Customer.cs",
+              "RelativeToolTip": "Library\\Models\\Customer.cs",
+              "ViewState": "AgIAACcAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-17T09:06:06.108Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Category.cs",
+              "DocumentMoniker": "C:\\Users\\TechProfit.ru\\Desktop\\\u043A\u0443\u0440\u0441\u043E\u0432\u0430\u044F_\u0440\u0430\u0431\u043E\u0442\u0430\\online_store\\ProjectStore\\Library\\Models\\Category.cs",
+              "RelativeDocumentMoniker": "Library\\Models\\Category.cs",
+              "ToolTip": "C:\\Users\\TechProfit.ru\\Desktop\\\u043A\u0443\u0440\u0441\u043E\u0432\u0430\u044F_\u0440\u0430\u0431\u043E\u0442\u0430\\online_store\\ProjectStore\\Library\\Models\\Category.cs",
+              "RelativeToolTip": "Library\\Models\\Category.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-17T09:06:03.18Z"
             }
           ]
         }

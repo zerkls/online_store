@@ -1,4 +1,4 @@
-using System.Collections.Generic;
+п»їusing System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.ComponentModel;
 using System.Linq;
@@ -43,17 +43,17 @@ public class Customer : Entity, INotifyPropertyChanged
     }
 
     /// <summary>
-    /// История заказов покупателя
+    /// РСЃС‚РѕСЂРёСЏ Р·Р°РєР°Р·РѕРІ РїРѕРєСѓРїР°С‚РµР»СЏ
     /// <summary>
     public ObservableCollection<Order> OrderHistory { get; private set; }
 
     /// <summary>
-    /// Общее количество заказов
+    /// РћР±С‰РµРµ РєРѕР»РёС‡РµСЃС‚РІРѕ Р·Р°РєР°Р·РѕРІ
     /// <summary>
     public int TotalOrders => OrderHistory.Count;
 
     /// <summary>
-    /// Общая сумма всех заказов
+    /// РћР±С‰Р°СЏ СЃСѓРјРјР° РІСЃРµС… Р·Р°РєР°Р·РѕРІ
     /// <summary>
     public decimal TotalSpent => OrderHistory.Sum(order => order.TotalAmount);
 
@@ -70,7 +70,7 @@ public class Customer : Entity, INotifyPropertyChanged
     }
 
     /// <summary>
-    /// Добавить заказ в историю
+    /// Р”РѕР±Р°РІРёС‚СЊ Р·Р°РєР°Р· РІ РёСЃС‚РѕСЂРёСЋ
     /// <summary>
     public void AddOrderToHistory(Order order)
     {
@@ -80,15 +80,15 @@ public class Customer : Entity, INotifyPropertyChanged
     }
 
     /// <summary>
-    /// Получить статистику по заказам
+    /// РџРѕР»СѓС‡РёС‚СЊ СЃС‚Р°С‚РёСЃС‚РёРєСѓ РїРѕ Р·Р°РєР°Р·Р°Рј
     /// <summary>
     public string GetOrderStatistics()
     {
-        return $"Заказов: {TotalOrders} | Общая сумма: {TotalSpent:C}";
+        return $"Р—Р°РєР°Р·РѕРІ: {TotalOrders} | РћР±С‰Р°СЏ СЃСѓРјРјР°: {TotalSpent:C}";
     }
 
     /// <summary>
-    /// Проверить, является ли покупатель постоянным клиентом
+    /// РџСЂРѕРІРµСЂРёС‚СЊ, СЏРІР»СЏРµС‚СЃСЏ Р»Рё РїРѕРєСѓРїР°С‚РµР»СЊ РїРѕСЃС‚РѕСЏРЅРЅС‹Рј РєР»РёРµРЅС‚РѕРј
     /// <summary>
     public bool IsRegularCustomer => TotalOrders >= 3;
 

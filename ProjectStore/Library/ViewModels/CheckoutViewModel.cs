@@ -1,4 +1,4 @@
-using System.Collections.Generic;
+п»їusing System.Collections.Generic;
 using System.ComponentModel;
 using System.Linq;
 using System.Windows;
@@ -26,10 +26,10 @@ public class CheckoutViewModel : INotifyPropertyChanged
     public decimal DiscountAmount => CalculateDiscount();
     public decimal TotalAmount => Subtotal - DiscountAmount;
 
-    public string OrderSummary => $@"Товаров: {CartItems.Sum(item => item.Quantity)}
-Подитог: {Subtotal:C}
-Скидка: {DiscountAmount:C}
-ИТОГО: {TotalAmount:C}";
+    public string OrderSummary => $@"РўРѕРІР°СЂРѕРІ: {CartItems.Sum(item => item.Quantity)}
+РџРѕРґРёС‚РѕРі: {Subtotal:C}
+РЎРєРёРґРєР°: {DiscountAmount:C}
+РРўРћР“Рћ: {TotalAmount:C}";
 
     public IPaymentService SelectedPaymentMethod
     {
@@ -103,7 +103,7 @@ public class CheckoutViewModel : INotifyPropertyChanged
     {
         decimal discount = 0;
         /// <summary>
-        /// Скидка 10% для заказов свыше 5000 руб.
+        /// РЎРєРёРґРєР° 10% РґР»СЏ Р·Р°РєР°Р·РѕРІ СЃРІС‹С€Рµ 5000 СЂСѓР±.
         /// </summary>
         if (Subtotal > 5000)
             discount += Subtotal * 0.1m;
@@ -114,13 +114,13 @@ public class CheckoutViewModel : INotifyPropertyChanged
     private void CompleteOrder(object parameter)
     {
         /// <summary>
-        /// Настройка выбранного метода оплаты
+        /// РќР°СЃС‚СЂРѕР№РєР° РІС‹Р±СЂР°РЅРЅРѕРіРѕ РјРµС‚РѕРґР° РѕРїР»Р°С‚С‹
         /// </summary>
         if (SelectedPaymentMethod is CreditCardPayment cardPayment)
         {
             if (string.IsNullOrWhiteSpace(CardNumber) || string.IsNullOrWhiteSpace(CardHolder))
             {
-                MessageBox.Show("Заполните все поля банковской карты", "Ошибка",
+                MessageBox.Show("Р—Р°РїРѕР»РЅРёС‚Рµ РІСЃРµ РїРѕР»СЏ Р±Р°РЅРєРѕРІСЃРєРѕР№ РєР°СЂС‚С‹", "РћС€РёР±РєР°",
                               MessageBoxButton.OK, MessageBoxImage.Warning);
                 return;
             }
@@ -134,14 +134,14 @@ public class CheckoutViewModel : INotifyPropertyChanged
         {
             if (string.IsNullOrWhiteSpace(PhoneNumber))
             {
-                MessageBox.Show("Введите номер телефона", "Ошибка",
+                MessageBox.Show("Р’РІРµРґРёС‚Рµ РЅРѕРјРµСЂ С‚РµР»РµС„РѕРЅР°", "РћС€РёР±РєР°",
                               MessageBoxButton.OK, MessageBoxImage.Warning);
                 return;
             }
             eWalletPayment.PhoneNumber = PhoneNumber;
         }
         /// <summary>
-        /// Создание и обработка заказа
+        /// РЎРѕР·РґР°РЅРёРµ Рё РѕР±СЂР°Р±РѕС‚РєР° Р·Р°РєР°Р·Р°
         /// </summary>
         var order = new Order(CurrentCustomer)
         {
@@ -157,21 +157,21 @@ public class CheckoutViewModel : INotifyPropertyChanged
         {
             _mainViewModel.AddOrder(order);
             /// <summary>
-            /// Обновляем отображение запасов в главном окне
+            /// РћР±РЅРѕРІР»СЏРµРј РѕС‚РѕР±СЂР°Р¶РµРЅРёРµ Р·Р°РїР°СЃРѕРІ РІ РіР»Р°РІРЅРѕРј РѕРєРЅРµ
             /// </summary>
             _mainViewModel.UpdateProductStockDisplay();
 
-            MessageBox.Show($"Заказ #{order.Id} успешно оформлен!\nСумма: {order.TotalAmount:C}",
-                          "Успех", MessageBoxButton.OK, MessageBoxImage.Information);
+            MessageBox.Show($"Р—Р°РєР°Р· #{order.Id} СѓСЃРїРµС€РЅРѕ РѕС„РѕСЂРјР»РµРЅ!\nРЎСѓРјРјР°: {order.TotalAmount:C}",
+                          "РЈСЃРїРµС…", MessageBoxButton.OK, MessageBoxImage.Information);
             /// <summary>
-            /// Закрытие окна с успешным результатом
+            /// Р—Р°РєСЂС‹С‚РёРµ РѕРєРЅР° СЃ СѓСЃРїРµС€РЅС‹Рј СЂРµР·СѓР»СЊС‚Р°С‚РѕРј
             /// </summary>
             CloseWindow(true);
         }
         else
         {
-            MessageBox.Show("Ошибка при оформлении заказа. Проверьте доступность товаров.",
-                          "Ошибка", MessageBoxButton.OK, MessageBoxImage.Error);
+            MessageBox.Show("РћС€РёР±РєР° РїСЂРё РѕС„РѕСЂРјР»РµРЅРёРё Р·Р°РєР°Р·Р°. РџСЂРѕРІРµСЂСЊС‚Рµ РґРѕСЃС‚СѓРїРЅРѕСЃС‚СЊ С‚РѕРІР°СЂРѕРІ.",
+                          "РћС€РёР±РєР°", MessageBoxButton.OK, MessageBoxImage.Error);
         }
     }
 
