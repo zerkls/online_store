@@ -1,11 +1,11 @@
-using System.Windows;
+п»їusing System.Windows;
 using WpfShopApp.ViewModels;
 
 namespace WpfShopApp.Views;
 
 /// <summary>
-/// Окно оформления заказа
-/// Демонстрирует принципы MVVM - код-behind содержит минимальную логику
+/// РћРєРЅРѕ РѕС„РѕСЂРјР»РµРЅРёСЏ Р·Р°РєР°Р·Р°
+/// Р”РµРјРѕРЅСЃС‚СЂРёСЂСѓРµС‚ РїСЂРёРЅС†РёРїС‹ MVVM - РєРѕРґ-behind СЃРѕРґРµСЂР¶РёС‚ РјРёРЅРёРјР°Р»СЊРЅСѓСЋ Р»РѕРіРёРєСѓ
 /// </summary>
 public partial class CheckoutWindow : Window
 {
@@ -20,25 +20,25 @@ public partial class CheckoutWindow : Window
     }
 
     /// <summary>
-    /// Обработчик загрузки окна - устанавливаем фокус на первом поле
+    /// РћР±СЂР°Р±РѕС‚С‡РёРє Р·Р°РіСЂСѓР·РєРё РѕРєРЅР° - СѓСЃС‚Р°РЅР°РІР»РёРІР°РµРј С„РѕРєСѓСЃ РЅР° РїРµСЂРІРѕРј РїРѕР»Рµ
     /// </summary>
     private void Window_Loaded(object sender, RoutedEventArgs e)
     {
-        // Устанавливаем фокус на поле имени, если оно пустое
+        // РЈСЃС‚Р°РЅР°РІР»РёРІР°РµРј С„РѕРєСѓСЃ РЅР° РїРѕР»Рµ РёРјРµРЅРё, РµСЃР»Рё РѕРЅРѕ РїСѓСЃС‚РѕРµ
         if (DataContext is CheckoutViewModel vm &&
             string.IsNullOrEmpty(vm.CurrentCustomer.Name))
         {
-            // Можно установить фокус на первое поле ввода
-            // NameTextBox.Focus(); - если бы у нас был x:Name для TextBox
+            // РњРѕР¶РЅРѕ СѓСЃС‚Р°РЅРѕРІРёС‚СЊ С„РѕРєСѓСЃ РЅР° РїРµСЂРІРѕРµ РїРѕР»Рµ РІРІРѕРґР°
+            // NameTextBox.Focus(); - РµСЃР»Рё Р±С‹ Сѓ РЅР°СЃ Р±С‹Р» x:Name РґР»СЏ TextBox
         }
     }
 
     /// <summary>
-    /// Обработчик закрытия окна через крестик
+    /// РћР±СЂР°Р±РѕС‚С‡РёРє Р·Р°РєСЂС‹С‚РёСЏ РѕРєРЅР° С‡РµСЂРµР· РєСЂРµСЃС‚РёРє
     /// </summary>
     private void Window_Closing(object sender, System.ComponentModel.CancelEventArgs e)
     {
-        // Если окно закрывается через крестик, устанавливаем DialogResult в false
+        // Р•СЃР»Рё РѕРєРЅРѕ Р·Р°РєСЂС‹РІР°РµС‚СЃСЏ С‡РµСЂРµР· РєСЂРµСЃС‚РёРє, СѓСЃС‚Р°РЅР°РІР»РёРІР°РµРј DialogResult РІ false
         if (DialogResult == null)
         {
             DialogResult = false;
@@ -46,7 +46,7 @@ public partial class CheckoutWindow : Window
     }
 
     /// <summary>
-    /// Обработчик нажатия клавиш - ESC для отмены
+    /// РћР±СЂР°Р±РѕС‚С‡РёРє РЅР°Р¶Р°С‚РёСЏ РєР»Р°РІРёС€ - ESC РґР»СЏ РѕС‚РјРµРЅС‹
     /// </summary>
     private void Window_KeyDown(object sender, System.Windows.Input.KeyEventArgs e)
     {
@@ -60,25 +60,25 @@ public partial class CheckoutWindow : Window
     }
 
     /// <summary>
-    /// Автоматическое форматирование номера карты
+    /// РђРІС‚РѕРјР°С‚РёС‡РµСЃРєРѕРµ С„РѕСЂРјР°С‚РёСЂРѕРІР°РЅРёРµ РЅРѕРјРµСЂР° РєР°СЂС‚С‹
     /// </summary>
     private void CardNumberTextBox_TextChanged(object sender, System.Windows.Controls.TextChangedEventArgs e)
     {
-        // В реальном приложении здесь можно добавить форматирование номера карты
-        // Например: 1234 5678 9012 3456
+        // Р’ СЂРµР°Р»СЊРЅРѕРј РїСЂРёР»РѕР¶РµРЅРёРё Р·РґРµСЃСЊ РјРѕР¶РЅРѕ РґРѕР±Р°РІРёС‚СЊ С„РѕСЂРјР°С‚РёСЂРѕРІР°РЅРёРµ РЅРѕРјРµСЂР° РєР°СЂС‚С‹
+        // РќР°РїСЂРёРјРµСЂ: 1234 5678 9012 3456
     }
 
     /// <summary>
-    /// Валидация даты истечения срока карты
+    /// Р’Р°Р»РёРґР°С†РёСЏ РґР°С‚С‹ РёСЃС‚РµС‡РµРЅРёСЏ СЃСЂРѕРєР° РєР°СЂС‚С‹
     /// </summary>
     private void ExpiryDateTextBox_TextChanged(object sender, System.Windows.Controls.TextChangedEventArgs e)
     {
-        // В реальном приложении можно добавить автоматическое добавление "/"
-        // и валидацию формата ММ/ГГ
+        // Р’ СЂРµР°Р»СЊРЅРѕРј РїСЂРёР»РѕР¶РµРЅРёРё РјРѕР¶РЅРѕ РґРѕР±Р°РІРёС‚СЊ Р°РІС‚РѕРјР°С‚РёС‡РµСЃРєРѕРµ РґРѕР±Р°РІР»РµРЅРёРµ "/"
+        // Рё РІР°Р»РёРґР°С†РёСЋ С„РѕСЂРјР°С‚Р° РњРњ/Р“Р“
     }
 
     /// <summary>
-    /// Ограничение ввода для CVV (только цифры)
+    /// РћРіСЂР°РЅРёС‡РµРЅРёРµ РІРІРѕРґР° РґР»СЏ CVV (С‚РѕР»СЊРєРѕ С†РёС„СЂС‹)
     /// </summary>
     private void CVVTextBox_PreviewTextInput(object sender, System.Windows.Input.TextCompositionEventArgs e)
     {
@@ -89,7 +89,7 @@ public partial class CheckoutWindow : Window
     }
 
     /// <summary>
-    /// Ограничение длины CVV (3-4 цифры)
+    /// РћРіСЂР°РЅРёС‡РµРЅРёРµ РґР»РёРЅС‹ CVV (3-4 С†РёС„СЂС‹)
     /// </summary>
     private void CVVTextBox_TextChanged(object sender, System.Windows.Controls.TextChangedEventArgs e)
     {
@@ -102,11 +102,11 @@ public partial class CheckoutWindow : Window
     }
 
     /// <summary>
-    /// Ограничение ввода для номера телефона
+    /// РћРіСЂР°РЅРёС‡РµРЅРёРµ РІРІРѕРґР° РґР»СЏ РЅРѕРјРµСЂР° С‚РµР»РµС„РѕРЅР°
     /// </summary>
     private void PhoneNumberTextBox_PreviewTextInput(object sender, System.Windows.Input.TextCompositionEventArgs e)
     {
-        // Разрешаем только цифры, +, -, (, )
+        // Р Р°Р·СЂРµС€Р°РµРј С‚РѕР»СЊРєРѕ С†РёС„СЂС‹, +, -, (, )
         if (!char.IsDigit(e.Text, 0) && e.Text != "+" && e.Text != "-" && e.Text != "(" && e.Text != ")")
         {
             e.Handled = true;
@@ -114,22 +114,22 @@ public partial class CheckoutWindow : Window
     }
 
     /// <summary>
-    /// Подсказка при наведении на способ оплаты
+    /// РџРѕРґСЃРєР°Р·РєР° РїСЂРё РЅР°РІРµРґРµРЅРёРё РЅР° СЃРїРѕСЃРѕР± РѕРїР»Р°С‚С‹
     /// </summary>
     private void PaymentComboBox_MouseEnter(object sender, System.Windows.Input.MouseEventArgs e)
     {
-        // Можно показать tooltip с информацией о способах оплаты
+        // РњРѕР¶РЅРѕ РїРѕРєР°Р·Р°С‚СЊ tooltip СЃ РёРЅС„РѕСЂРјР°С†РёРµР№ Рѕ СЃРїРѕСЃРѕР±Р°С… РѕРїР»Р°С‚С‹
     }
 
     /// <summary>
-    /// Анимация при наведении на кнопки
+    /// РђРЅРёРјР°С†РёСЏ РїСЂРё РЅР°РІРµРґРµРЅРёРё РЅР° РєРЅРѕРїРєРё
     /// </summary>
     private void Button_MouseEnter(object sender, System.Windows.Input.MouseEventArgs e)
     {
         var button = sender as System.Windows.Controls.Button;
         if (button != null)
         {
-            // Легкая анимация может быть добавлена здесь
+            // Р›РµРіРєР°СЏ Р°РЅРёРјР°С†РёСЏ РјРѕР¶РµС‚ Р±С‹С‚СЊ РґРѕР±Р°РІР»РµРЅР° Р·РґРµСЃСЊ
         }
     }
 }

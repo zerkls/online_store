@@ -21,6 +21,10 @@
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\TechProfit.ru\\Desktop\\\u043A\u0443\u0440\u0441\u043E\u0432\u0430\u044F_\u0440\u0430\u0431\u043E\u0442\u0430\\online_store\\ProjectStore\\Library\\Services\\CashPayment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Library\\Services\\CashPayment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\TechProfit.ru\\Desktop\\\u043A\u0443\u0440\u0441\u043E\u0432\u0430\u044F_\u0440\u0430\u0431\u043E\u0442\u0430\\online_store\\ProjectStore\\Library\\Views\\CheckoutWindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Library\\Views\\CheckoutWindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,7 +34,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Bookmark",
@@ -42,39 +46,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "IPaymentService.cs",
-              "DocumentMoniker": "C:\\Users\\TechProfit.ru\\Desktop\\\u043A\u0443\u0440\u0441\u043E\u0432\u0430\u044F_\u0440\u0430\u0431\u043E\u0442\u0430\\online_store\\ProjectStore\\Library\\Services\\IPaymentService.cs",
-              "RelativeDocumentMoniker": "Library\\Services\\IPaymentService.cs",
-              "ToolTip": "C:\\Users\\TechProfit.ru\\Desktop\\\u043A\u0443\u0440\u0441\u043E\u0432\u0430\u044F_\u0440\u0430\u0431\u043E\u0442\u0430\\online_store\\ProjectStore\\Library\\Services\\IPaymentService.cs",
-              "RelativeToolTip": "Library\\Services\\IPaymentService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-17T10:53:48.137Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "EWalletPayment.cs",
-              "DocumentMoniker": "C:\\Users\\TechProfit.ru\\Desktop\\\u043A\u0443\u0440\u0441\u043E\u0432\u0430\u044F_\u0440\u0430\u0431\u043E\u0442\u0430\\online_store\\ProjectStore\\Library\\Services\\EWalletPayment.cs",
-              "RelativeDocumentMoniker": "Library\\Services\\EWalletPayment.cs",
-              "ToolTip": "C:\\Users\\TechProfit.ru\\Desktop\\\u043A\u0443\u0440\u0441\u043E\u0432\u0430\u044F_\u0440\u0430\u0431\u043E\u0442\u0430\\online_store\\ProjectStore\\Library\\Services\\EWalletPayment.cs",
-              "RelativeToolTip": "Library\\Services\\EWalletPayment.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-17T10:53:31.746Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 2,
               "Title": "DataService.cs",
               "DocumentMoniker": "C:\\Users\\TechProfit.ru\\Desktop\\\u043A\u0443\u0440\u0441\u043E\u0432\u0430\u044F_\u0440\u0430\u0431\u043E\u0442\u0430\\online_store\\ProjectStore\\Library\\Services\\DataService.cs",
               "RelativeDocumentMoniker": "Library\\Services\\DataService.cs",
               "ToolTip": "C:\\Users\\TechProfit.ru\\Desktop\\\u043A\u0443\u0440\u0441\u043E\u0432\u0430\u044F_\u0440\u0430\u0431\u043E\u0442\u0430\\online_store\\ProjectStore\\Library\\Services\\DataService.cs",
               "RelativeToolTip": "Library\\Services\\DataService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAJAAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-17T10:53:13.953Z",
               "EditorCaption": ""
@@ -87,7 +65,7 @@
               "RelativeDocumentMoniker": "Library\\Services\\CreditCardPayment.cs",
               "ToolTip": "C:\\Users\\TechProfit.ru\\Desktop\\\u043A\u0443\u0440\u0441\u043E\u0432\u0430\u044F_\u0440\u0430\u0431\u043E\u0442\u0430\\online_store\\ProjectStore\\Library\\Services\\CreditCardPayment.cs",
               "RelativeToolTip": "Library\\Services\\CreditCardPayment.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-17T10:52:59.634Z",
               "EditorCaption": ""
@@ -100,9 +78,48 @@
               "RelativeDocumentMoniker": "Library\\Services\\CashPayment.cs",
               "ToolTip": "C:\\Users\\TechProfit.ru\\Desktop\\\u043A\u0443\u0440\u0441\u043E\u0432\u0430\u044F_\u0440\u0430\u0431\u043E\u0442\u0430\\online_store\\ProjectStore\\Library\\Services\\CashPayment.cs",
               "RelativeToolTip": "Library\\Services\\CashPayment.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-17T10:52:33.772Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "EWalletPayment.cs",
+              "DocumentMoniker": "C:\\Users\\TechProfit.ru\\Desktop\\\u043A\u0443\u0440\u0441\u043E\u0432\u0430\u044F_\u0440\u0430\u0431\u043E\u0442\u0430\\online_store\\ProjectStore\\Library\\Services\\EWalletPayment.cs",
+              "RelativeDocumentMoniker": "Library\\Services\\EWalletPayment.cs",
+              "ToolTip": "C:\\Users\\TechProfit.ru\\Desktop\\\u043A\u0443\u0440\u0441\u043E\u0432\u0430\u044F_\u0440\u0430\u0431\u043E\u0442\u0430\\online_store\\ProjectStore\\Library\\Services\\EWalletPayment.cs",
+              "RelativeToolTip": "Library\\Services\\EWalletPayment.cs",
+              "ViewState": "AgIAACEAAAAAAAAAAAAAADgAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-17T10:53:31.746Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "IPaymentService.cs",
+              "DocumentMoniker": "C:\\Users\\TechProfit.ru\\Desktop\\\u043A\u0443\u0440\u0441\u043E\u0432\u0430\u044F_\u0440\u0430\u0431\u043E\u0442\u0430\\online_store\\ProjectStore\\Library\\Services\\IPaymentService.cs",
+              "RelativeDocumentMoniker": "Library\\Services\\IPaymentService.cs",
+              "ToolTip": "C:\\Users\\TechProfit.ru\\Desktop\\\u043A\u0443\u0440\u0441\u043E\u0432\u0430\u044F_\u0440\u0430\u0431\u043E\u0442\u0430\\online_store\\ProjectStore\\Library\\Services\\IPaymentService.cs",
+              "RelativeToolTip": "Library\\Services\\IPaymentService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-17T10:53:48.137Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "CheckoutWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\TechProfit.ru\\Desktop\\\u043A\u0443\u0440\u0441\u043E\u0432\u0430\u044F_\u0440\u0430\u0431\u043E\u0442\u0430\\online_store\\ProjectStore\\Library\\Views\\CheckoutWindow.xaml.cs",
+              "RelativeDocumentMoniker": "Library\\Views\\CheckoutWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\TechProfit.ru\\Desktop\\\u043A\u0443\u0440\u0441\u043E\u0432\u0430\u044F_\u0440\u0430\u0431\u043E\u0442\u0430\\online_store\\ProjectStore\\Library\\Views\\CheckoutWindow.xaml.cs",
+              "RelativeToolTip": "Library\\Views\\CheckoutWindow.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-17T10:56:39.965Z",
               "EditorCaption": ""
             }
           ]

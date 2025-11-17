@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("WpfShopApp")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b6a7c6d0c7739cfbe9292450b331c488864e1ddb")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6686913c0b75e31005cd9a10091ee120a8754acf")]
 [assembly: System.Reflection.AssemblyProductAttribute("WpfShopApp")]
 [assembly: System.Reflection.AssemblyTitleAttribute("WPF Shop Application")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
