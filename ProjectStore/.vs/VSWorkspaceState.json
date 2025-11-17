@@ -2,8 +2,9 @@
   "ExpandedNodes": [
     "",
     "\\Library",
-    "\\Library\\Models"
+    "\\Library\\Models",
+    "\\Library\\Models\\Enums"
   ],
-  "SelectedNode": "\\Library\\Models\\Customer.cs",
+  "SelectedNode": "\\Library\\Models\\Enums\\OrderStatus.cs",
   "PreviewInSolutionExplorer": false
 }
