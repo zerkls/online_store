@@ -1,10 +1,8 @@
 {
   "ExpandedNodes": [
     "",
-    "\\Library",
-    "\\Library\\Models",
-    "\\Library\\Models\\Enums"
+    "\\Library"
   ],
-  "SelectedNode": "\\Library\\Models\\Enums\\OrderStatus.cs",
+  "SelectedNode": "\\Library\\WpfShopApp.csproj",
   "PreviewInSolutionExplorer": false
 }

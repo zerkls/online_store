@@ -50,7 +50,9 @@ public class Order : Entity, INotifyPropertyChanged
         }
     }
 
-    // Элементы заказа (композиция)
+    /// <summary>
+    /// Элементы заказа (композиция)
+    /// </summary>
     public ObservableCollection<OrderItem> Items { get; private set; }
 
     public IPaymentService PaymentMethod
@@ -63,19 +65,29 @@ public class Order : Entity, INotifyPropertyChanged
         }
     }
 
-    // Общая стоимость без скидки
+    /// <summary>
+    /// Общая стоимость без скидки
+    /// </summary>
     public decimal Subtotal => Items.Sum(item => item.TotalPrice);
 
-    // Размер скидки (инкапсуляция логики расчета)
+    /// <summary>
+    /// Размер скидки (инкапсуляция логики расчета)
+    /// </summary>
     public decimal DiscountAmount => CalculateDiscount();
 
-    // Итоговая стоимость
+    /// <summary>
+    /// Итоговая стоимость
+    /// </summary>
     public decimal TotalAmount => Subtotal - DiscountAmount;
 
-    // Описание статуса заказа
+    /// <summary>
+    /// Описание статуса заказа
+    /// </summary>
     public string StatusDescription => GetStatusDescription();
 
-    // Можно ли отменить заказ
+    /// <summary>
+    /// Можно ли отменить заказ
+    /// </summary>
     public bool CanBeCancelled => Status == OrderStatus.Pending ||
                                  Status == OrderStatus.Processing ||
                                  Status == OrderStatus.Completed;
@@ -100,7 +112,9 @@ public class Order : Entity, INotifyPropertyChanged
         Customer = customer;
     }
 
-    // Добавить товар в заказ
+    /// </summary>
+    /// Добавить товар в заказ
+    /// </summary>
     public bool AddItem(Product product, int quantity)
     {
         if (product == null || quantity <= 0)
@@ -122,7 +136,9 @@ public class Order : Entity, INotifyPropertyChanged
         return true;
     }
 
-    // Удалить товар из заказа
+    /// <summary>
+    /// Удалить товар из заказа
+    /// </summary>
     public bool RemoveItem(int productId)
     {
         var item = Items.FirstOrDefault(i => i.Product.Id == productId);
@@ -134,30 +150,38 @@ public class Order : Entity, INotifyPropertyChanged
         return false;
     }
 
-    // Расчет скидки (инкапсуляция бизнес-логики)
+    /// <summary>
+    /// Расчет скидки 
+    /// </summary>
     private decimal CalculateDiscount()
     {
         decimal discount = 0;
 
-        // Скидка 10% для заказов свыше 5000 руб.
+        /// <summary>
+        /// Скидка 10% для заказов свыше 5000 руб.
+        /// </summary>
         if (Subtotal > 5000)
         {
             discount += Subtotal * 0.1m;
         }
-
-        // Дополнительная скидка 5% для постоянных клиентов
+        /// <summary>
+        /// Дополнительная скидка 5% для постоянных клиентов
+        /// <summary>
         if (Customer?.IsRegularCustomer == true)
         {
             discount += Subtotal * 0.05m;
         }
 
-        // Максимальная скидка не более 30%
+        /// <summary>
+        /// Максимальная скидка не более 30%
+        /// <summary>
         decimal maxDiscount = Subtotal * 0.3m;
         return Math.Min(discount, maxDiscount);
     }
 
-
-    // Получить описание статуса
+    /// <summary>
+    /// Получить описание статуса
+    /// </summary>
     private string GetStatusDescription()
     {
         return Status switch
@@ -172,13 +196,17 @@ public class Order : Entity, INotifyPropertyChanged
         };
     }
 
-    // Получить информацию о заказе
+    /// <summary>
+    /// Получить информацию о заказе
+    /// </summary>
     public string GetOrderInfo()
     {
         return $"Заказ #{Id} от {OrderDate:dd.MM.yyyy} - {TotalAmount:C} ({StatusDescription})";
     }
 
-    // Получить детальную информацию о заказе
+    /// <summary>
+    /// Получить детальную информацию о заказе
+    /// </summary>
     public string GetDetailedInfo()
     {
         var itemsInfo = string.Join("\n", Items.Select(item => $"  {item.DetailedInfo}"));
@@ -207,7 +235,9 @@ public class Order : Entity, INotifyPropertyChanged
 
     public bool ProcessOrder()
     {
-        // Проверка доступности товаров
+        /// </summary>
+        /// Проверка доступности товаров
+        /// </summary>
         foreach (var item in Items)
         {
             if (item.Product.StockQuantity < item.Quantity)
@@ -216,14 +246,16 @@ public class Order : Entity, INotifyPropertyChanged
                 return false;
             }
         }
-
-        // Резервирование товаров
+        /// </summary>
+        /// Резервирование товаров
+        /// </summary>
         foreach (var item in Items)
         {
             item.Product.StockQuantity -= item.Quantity;
         }
-
-        // Обработка оплаты
+        /// </summary>
+        /// Обработка оплаты
+        /// </summary>
         if (PaymentMethod.ProcessPayment(TotalAmount))
         {
             Status = OrderStatus.Completed;
@@ -231,7 +263,9 @@ public class Order : Entity, INotifyPropertyChanged
         }
         else
         {
-            // Возврат товаров при неудачной оплате
+            /// </summary>
+            /// Возврат товаров при неудачной оплате
+            /// </summary>
             foreach (var item in Items)
             {
                 item.Product.StockQuantity += item.Quantity;
@@ -245,8 +279,9 @@ public class Order : Entity, INotifyPropertyChanged
     {
         if (Status != OrderStatus.Completed && Status != OrderStatus.Processing)
             return false;
-
-        // Возврат товаров на склад
+        /// </summary>
+        /// Возврат товаров на склад
+        /// </summary>
         foreach (var item in Items)
         {
             item.Product.StockQuantity += item.Quantity;

@@ -2,21 +2,32 @@ namespace WpfShopApp.Models.Enums;
 
 public enum OrderStatus
 {
-    // Ожидает обработки
+    /// <summary>
+    /// Ожидает обработки
+    /// <summary>
     Pending = 0,
 
-    // В обработке
+    /// <summary>
+    /// В обработке
+    /// <summary>
     Processing = 1,
 
-    // Завершен
+    /// <summary>
+    /// Завершен
+    /// <summary>
     Completed = 2,
 
-    // Отменен
+    /// <summary>
+    /// Отменен
+    /// <summary>
     Cancelled = 3,
 
-    // Отправлен
+    /// <summary>
+    /// Отправлен
     Shipped = 4,
 
-    // Ошибка оплаты
+    /// <summary>
+    /// Ошибка оплаты
+    /// <summary>
     PaymentFailed = 5
 }

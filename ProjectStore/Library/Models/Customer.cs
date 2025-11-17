@@ -42,13 +42,19 @@ public class Customer : Entity, INotifyPropertyChanged
         }
     }
 
-    // История заказов покупателя (композиция)
+    /// <summary>
+    /// История заказов покупателя
+    /// <summary>
     public ObservableCollection<Order> OrderHistory { get; private set; }
 
-    // Общее количество заказов
+    /// <summary>
+    /// Общее количество заказов
+    /// <summary>
     public int TotalOrders => OrderHistory.Count;
 
-    // Общая сумма всех заказов
+    /// <summary>
+    /// Общая сумма всех заказов
+    /// <summary>
     public decimal TotalSpent => OrderHistory.Sum(order => order.TotalAmount);
 
     public Customer()
@@ -63,7 +69,9 @@ public class Customer : Entity, INotifyPropertyChanged
         Email = email;
     }
 
-    // Добавить заказ в историю
+    /// <summary>
+    /// Добавить заказ в историю
+    /// <summary>
     public void AddOrderToHistory(Order order)
     {
         OrderHistory.Add(order);
@@ -71,13 +79,17 @@ public class Customer : Entity, INotifyPropertyChanged
         OnPropertyChanged(nameof(TotalSpent));
     }
 
-    // Получить статистику по заказам
+    /// <summary>
+    /// Получить статистику по заказам
+    /// <summary>
     public string GetOrderStatistics()
     {
         return $"Заказов: {TotalOrders} | Общая сумма: {TotalSpent:C}";
     }
 
-    // Проверить, является ли покупатель постоянным клиентом
+    /// <summary>
+    /// Проверить, является ли покупатель постоянным клиентом
+    /// <summary>
     public bool IsRegularCustomer => TotalOrders >= 3;
 
     public override string ToString()

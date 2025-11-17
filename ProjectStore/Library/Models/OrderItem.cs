@@ -2,8 +2,9 @@ using System.ComponentModel;
 using System.Runtime.CompilerServices;
 
 namespace WpfShopApp.Models;
-
-// Ёлемент заказа - демонстрирует композицию
+/// <summary>
+/// Ёлемент заказа - демонстрирует композицию
+/// </summary>
 public class OrderItem : INotifyPropertyChanged
 {
     private Product _product;
@@ -31,11 +32,13 @@ public class OrderItem : INotifyPropertyChanged
             OnPropertyChanged(nameof(TotalPrice));
         }
     }
-
-    // ÷ена за единицу (делегирование к Product)
+    /// <summary>
+    /// ÷ена за единицу (делегирование к Product)
+    /// </summary>
     public decimal UnitPrice => Product?.Price ?? 0;
-
-    // ќбща€ стоимость позиции
+    /// <summary>
+    /// ќбща€ стоимость позиции
+    /// </summary>
     public decimal TotalPrice => UnitPrice * Quantity;
 
     public OrderItem() { }
@@ -45,14 +48,16 @@ public class OrderItem : INotifyPropertyChanged
         Product = product;
         Quantity = quantity;
     }
-
-    // ”величить количество
+    /// <summary>
+    /// ”величить количество
+    /// </summary>
     public void IncreaseQuantity(int amount = 1)
     {
         Quantity += amount;
     }
-
-    // ”меньшить количество
+    /// <summary>
+    /// ”меньшить количество
+    /// </summary>
     public bool DecreaseQuantity(int amount = 1)
     {
         if (Quantity - amount >= 1)
