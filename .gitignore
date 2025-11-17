@@ -1,5 +1,26 @@
-".vs/" 
-"bin/" 
-"obj/" 
-"*.user" 
-"*.suo" 
+# Visual Studio files
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Build results
+bin/
+obj/
+[Dd]ebug/
+[Rr]elease/
+x64/
+x86/
+[Bb]uild/
+bld/
+[Oo]bj/
+[Ll]og/
+
+# NuGet
+*.nupkg
+.nuget/
+packages/
+
+# Project files
+*.csproj.user

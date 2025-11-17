@@ -1,7 +1,7 @@
 ﻿using System.Windows;
-using WpfShopApp.ViewModels;
+using ProjectStore.ViewModels;
 
-namespace WpfShopApp.Views;
+namespace ProjectStore.Views;
 
 /// <summary>
 /// Окно оформления заказа

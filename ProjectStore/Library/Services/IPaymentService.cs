@@ -1,4 +1,4 @@
-namespace WpfShopApp.Services
+namespace ProjectStore.Services
 {
     public interface IPaymentService
     {

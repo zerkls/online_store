@@ -1,7 +1,7 @@
 using System.ComponentModel;
 using System.Runtime.CompilerServices;
 
-namespace WpfShopApp.Models;
+namespace ProjectStore.Models;
 
 public class Category : Entity, INotifyPropertyChanged
 {

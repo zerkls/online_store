@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace WpfShopApp.Services;
+namespace ProjectStore.Services;
 
 /// <summary>
 /// Реализация оплаты через электронный кошелек

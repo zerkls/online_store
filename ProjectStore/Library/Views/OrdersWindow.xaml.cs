@@ -1,8 +1,8 @@
 using System.Linq;
 using System.Windows;
-using WpfShopApp.ViewModels;
+using ProjectStore.ViewModels;
 
-namespace WpfShopApp.Views;
+namespace ProjectStore.Views;
 
 public partial class OrdersWindow : Window
 {

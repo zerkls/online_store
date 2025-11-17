@@ -1,17 +1,17 @@
-using System;
+п»їusing System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.IO;
 using System.Linq;
 using System.Text.Json;
 using System.Threading.Tasks;
-using WpfShopApp.Models;
+using ProjectStore.Models;
 
-namespace WpfShopApp.Services;
+namespace ProjectStore.Services;
 
 /// <summary>
-/// Сервис для работы с данными приложения
-/// Демонстрирует принципы инкапсуляции и абстракции
+/// РЎРµСЂРІРёСЃ РґР»СЏ СЂР°Р±РѕС‚С‹ СЃ РґР°РЅРЅС‹РјРё РїСЂРёР»РѕР¶РµРЅРёСЏ
+/// Р”РµРјРѕРЅСЃС‚СЂРёСЂСѓРµС‚ РїСЂРёРЅС†РёРїС‹ РёРЅРєР°РїСЃСѓР»СЏС†РёРё Рё Р°Р±СЃС‚СЂР°РєС†РёРё
 /// </summary>
 public class DataService
 {
@@ -43,7 +43,7 @@ public class DataService
     }
 
     /// <summary>
-    /// Создает директорию для данных если она не существует
+    /// РЎРѕР·РґР°РµС‚ РґРёСЂРµРєС‚РѕСЂРёСЋ РґР»СЏ РґР°РЅРЅС‹С… РµСЃР»Рё РѕРЅР° РЅРµ СЃСѓС‰РµСЃС‚РІСѓРµС‚
     /// </summary>
     private void EnsureDataDirectoryExists()
     {
@@ -54,7 +54,7 @@ public class DataService
     }
 
     /// <summary>
-    /// Инициализирует начальные данные при первом запуске
+    /// РРЅРёС†РёР°Р»РёР·РёСЂСѓРµС‚ РЅР°С‡Р°Р»СЊРЅС‹Рµ РґР°РЅРЅС‹Рµ РїСЂРё РїРµСЂРІРѕРј Р·Р°РїСѓСЃРєРµ
     /// </summary>
     public void InitializeSampleData()
     {
@@ -62,11 +62,11 @@ public class DataService
         {
             var categories = new[]
             {
-                new Category { Id = 1, Name = "Электроника", Description = "Современные гаджеты и устройства" },
-                new Category { Id = 2, Name = "Книги", Description = "Художественная и учебная литература" },
-                new Category { Id = 3, Name = "Одежда", Description = "Мужская и женская одежда" },
-                new Category { Id = 4, Name = "Спорт", Description = "Спортивные товары и инвентарь" },
-                new Category { Id = 5, Name = "Красота", Description = "Косметика и уходовые средства" }
+                new Category { Id = 1, Name = "Р­Р»РµРєС‚СЂРѕРЅРёРєР°", Description = "РЎРѕРІСЂРµРјРµРЅРЅС‹Рµ РіР°РґР¶РµС‚С‹ Рё СѓСЃС‚СЂРѕР№СЃС‚РІР°" },
+                new Category { Id = 2, Name = "РљРЅРёРіРё", Description = "РҐСѓРґРѕР¶РµСЃС‚РІРµРЅРЅР°СЏ Рё СѓС‡РµР±РЅР°СЏ Р»РёС‚РµСЂР°С‚СѓСЂР°" },
+                new Category { Id = 3, Name = "РћРґРµР¶РґР°", Description = "РњСѓР¶СЃРєР°СЏ Рё Р¶РµРЅСЃРєР°СЏ РѕРґРµР¶РґР°" },
+                new Category { Id = 4, Name = "РЎРїРѕСЂС‚", Description = "РЎРїРѕСЂС‚РёРІРЅС‹Рµ С‚РѕРІР°СЂС‹ Рё РёРЅРІРµРЅС‚Р°СЂСЊ" },
+                new Category { Id = 5, Name = "РљСЂР°СЃРѕС‚Р°", Description = "РљРѕСЃРјРµС‚РёРєР° Рё СѓС…РѕРґРѕРІС‹Рµ СЃСЂРµРґСЃС‚РІР°" }
             };
 
             foreach (var category in categories)
@@ -79,16 +79,16 @@ public class DataService
         {
             var products = new[]
             {
-                new Product { Id = 1, Name = "Смартфон Samsung", Price = 29999, StockQuantity = 15, Category = Categories[0], Description = "Флагманский смартфон с AMOLED дисплеем" },
-                new Product { Id = 2, Name = "Ноутбук ASUS", Price = 59999, StockQuantity = 8, Category = Categories[0], Description = "Игровой ноутбук с RTX видеокартой" },
-                new Product { Id = 3, Name = "Наушники Sony", Price = 7999, StockQuantity = 25, Category = Categories[0], Description = "Беспроводные наушники с шумоподавлением" },
-                new Product { Id = 4, Name = "Научная фантастика", Price = 499, StockQuantity = 50, Category = Categories[1], Description = "Сборник лучших научно-фантастических произведений" },
-                new Product { Id = 5, Name = "Учебник по C#", Price = 1299, StockQuantity = 30, Category = Categories[1], Description = "Подробное руководство по программированию на C#" },
-                new Product { Id = 6, Name = "Футболка хлопковая", Price = 999, StockQuantity = 100, Category = Categories[2], Description = "Удобная хлопковая футболка различных цветов" },
-                new Product { Id = 7, Name = "Джинсы классические", Price = 2999, StockQuantity = 40, Category = Categories[2], Description = "Классические джинсы прямого кроя" },
-                new Product { Id = 8, Name = "Фитнес-браслет", Price = 2499, StockQuantity = 35, Category = Categories[3], Description = "Умный браслет с отслеживанием активности" },
-                new Product { Id = 9, Name = "Крем для лица", Price = 1499, StockQuantity = 60, Category = Categories[4], Description = "Увлажняющий крем для ежедневного ухода" },
-                new Product { Id = 10, Name = "Планшет iPad", Price = 39999, StockQuantity = 12, Category = Categories[0], Description = "Планшет для работы и развлечений" }
+                new Product { Id = 1, Name = "РЎРјР°СЂС‚С„РѕРЅ Samsung", Price = 29999, StockQuantity = 15, Category = Categories[0], Description = "Р¤Р»Р°РіРјР°РЅСЃРєРёР№ СЃРјР°СЂС‚С„РѕРЅ СЃ AMOLED РґРёСЃРїР»РµРµРј" },
+                new Product { Id = 2, Name = "РќРѕСѓС‚Р±СѓРє ASUS", Price = 59999, StockQuantity = 8, Category = Categories[0], Description = "РРіСЂРѕРІРѕР№ РЅРѕСѓС‚Р±СѓРє СЃ RTX РІРёРґРµРѕРєР°СЂС‚РѕР№" },
+                new Product { Id = 3, Name = "РќР°СѓС€РЅРёРєРё Sony", Price = 7999, StockQuantity = 25, Category = Categories[0], Description = "Р‘РµСЃРїСЂРѕРІРѕРґРЅС‹Рµ РЅР°СѓС€РЅРёРєРё СЃ С€СѓРјРѕРїРѕРґР°РІР»РµРЅРёРµРј" },
+                new Product { Id = 4, Name = "РќР°СѓС‡РЅР°СЏ С„Р°РЅС‚Р°СЃС‚РёРєР°", Price = 499, StockQuantity = 50, Category = Categories[1], Description = "РЎР±РѕСЂРЅРёРє Р»СѓС‡С€РёС… РЅР°СѓС‡РЅРѕ-С„Р°РЅС‚Р°СЃС‚РёС‡РµСЃРєРёС… РїСЂРѕРёР·РІРµРґРµРЅРёР№" },
+                new Product { Id = 5, Name = "РЈС‡РµР±РЅРёРє РїРѕ C#", Price = 1299, StockQuantity = 30, Category = Categories[1], Description = "РџРѕРґСЂРѕР±РЅРѕРµ СЂСѓРєРѕРІРѕРґСЃС‚РІРѕ РїРѕ РїСЂРѕРіСЂР°РјРјРёСЂРѕРІР°РЅРёСЋ РЅР° C#" },
+                new Product { Id = 6, Name = "Р¤СѓС‚Р±РѕР»РєР° С…Р»РѕРїРєРѕРІР°СЏ", Price = 999, StockQuantity = 100, Category = Categories[2], Description = "РЈРґРѕР±РЅР°СЏ С…Р»РѕРїРєРѕРІР°СЏ С„СѓС‚Р±РѕР»РєР° СЂР°Р·Р»РёС‡РЅС‹С… С†РІРµС‚РѕРІ" },
+                new Product { Id = 7, Name = "Р”Р¶РёРЅСЃС‹ РєР»Р°СЃСЃРёС‡РµСЃРєРёРµ", Price = 2999, StockQuantity = 40, Category = Categories[2], Description = "РљР»Р°СЃСЃРёС‡РµСЃРєРёРµ РґР¶РёРЅСЃС‹ РїСЂСЏРјРѕРіРѕ РєСЂРѕСЏ" },
+                new Product { Id = 8, Name = "Р¤РёС‚РЅРµСЃ-Р±СЂР°СЃР»РµС‚", Price = 2499, StockQuantity = 35, Category = Categories[3], Description = "РЈРјРЅС‹Р№ Р±СЂР°СЃР»РµС‚ СЃ РѕС‚СЃР»РµР¶РёРІР°РЅРёРµРј Р°РєС‚РёРІРЅРѕСЃС‚Рё" },
+                new Product { Id = 9, Name = "РљСЂРµРј РґР»СЏ Р»РёС†Р°", Price = 1499, StockQuantity = 60, Category = Categories[4], Description = "РЈРІР»Р°Р¶РЅСЏСЋС‰РёР№ РєСЂРµРј РґР»СЏ РµР¶РµРґРЅРµРІРЅРѕРіРѕ СѓС…РѕРґР°" },
+                new Product { Id = 10, Name = "РџР»Р°РЅС€РµС‚ iPad", Price = 39999, StockQuantity = 12, Category = Categories[0], Description = "РџР»Р°РЅС€РµС‚ РґР»СЏ СЂР°Р±РѕС‚С‹ Рё СЂР°Р·РІР»РµС‡РµРЅРёР№" }
             };
 
             foreach (var product in products)
@@ -96,7 +96,7 @@ public class DataService
                 Products.Add(product);
             }
 
-            // Обновляем количество товаров в категориях
+            // РћР±РЅРѕРІР»СЏРµРј РєРѕР»РёС‡РµСЃС‚РІРѕ С‚РѕРІР°СЂРѕРІ РІ РєР°С‚РµРіРѕСЂРёСЏС…
             UpdateCategoryProductCounts();
         }
 
@@ -104,9 +104,9 @@ public class DataService
         {
             var customers = new[]
             {
-                new Customer { Id = 1, Name = "Иван Иванов", Email = "ivan@mail.ru", Phone = "+7-999-123-45-67", Address = "г. Москва, ул. Примерная, д. 1" },
-                new Customer { Id = 2, Name = "Мария Петрова", Email = "maria@mail.ru", Phone = "+7-999-234-56-78", Address = "г. Санкт-Петербург, ул. Тестовая, д. 25" },
-                new Customer { Id = 3, Name = "Алексей Сидоров", Email = "alex@mail.ru", Phone = "+7-999-345-67-89", Address = "г. Екатеринбург, ул. Образцовая, д. 10" }
+                new Customer { Id = 1, Name = "РРІР°РЅ РРІР°РЅРѕРІ", Email = "ivan@mail.ru", Phone = "+7-999-123-45-67", Address = "Рі. РњРѕСЃРєРІР°, СѓР». РџСЂРёРјРµСЂРЅР°СЏ, Рґ. 1" },
+                new Customer { Id = 2, Name = "РњР°СЂРёСЏ РџРµС‚СЂРѕРІР°", Email = "maria@mail.ru", Phone = "+7-999-234-56-78", Address = "Рі. РЎР°РЅРєС‚-РџРµС‚РµСЂР±СѓСЂРі, СѓР». РўРµСЃС‚РѕРІР°СЏ, Рґ. 25" },
+                new Customer { Id = 3, Name = "РђР»РµРєСЃРµР№ РЎРёРґРѕСЂРѕРІ", Email = "alex@mail.ru", Phone = "+7-999-345-67-89", Address = "Рі. Р•РєР°С‚РµСЂРёРЅР±СѓСЂРі, СѓР». РћР±СЂР°Р·С†РѕРІР°СЏ, Рґ. 10" }
             };
 
             foreach (var customer in customers)
@@ -117,7 +117,7 @@ public class DataService
     }
 
     /// <summary>
-    /// Обновляет количество товаров в категориях
+    /// РћР±РЅРѕРІР»СЏРµС‚ РєРѕР»РёС‡РµСЃС‚РІРѕ С‚РѕРІР°СЂРѕРІ РІ РєР°С‚РµРіРѕСЂРёСЏС…
     /// </summary>
     private void UpdateCategoryProductCounts()
     {
@@ -127,7 +127,7 @@ public class DataService
         }
     }
     /// <summary>
-    /// Очищает все данные (для тестирования)
+    /// РћС‡РёС‰Р°РµС‚ РІСЃРµ РґР°РЅРЅС‹Рµ (РґР»СЏ С‚РµСЃС‚РёСЂРѕРІР°РЅРёСЏ)
     /// </summary>
     public void ClearAllData()
     {
@@ -136,7 +136,7 @@ public class DataService
         Orders.Clear();
         Categories.Clear();
 
-        // Удаляем файлы данных
+        // РЈРґР°Р»СЏРµРј С„Р°Р№Р»С‹ РґР°РЅРЅС‹С…
         if (File.Exists(_productsFile)) File.Delete(_productsFile);
         if (File.Exists(_customersFile)) File.Delete(_customersFile);
         if (File.Exists(_ordersFile)) File.Delete(_ordersFile);

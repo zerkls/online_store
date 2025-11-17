@@ -4,7 +4,7 @@ using System.ComponentModel;
 using System.Linq;
 using System.Runtime.CompilerServices;
 
-namespace WpfShopApp.Models;
+namespace ProjectStore.Models;
 
 public class Customer : Entity, INotifyPropertyChanged
 {

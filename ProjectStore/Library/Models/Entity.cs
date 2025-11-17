@@ -1,4 +1,4 @@
-namespace WpfShopApp.Models
+namespace ProjectStore.Models
 {
     public abstract class Entity
     {

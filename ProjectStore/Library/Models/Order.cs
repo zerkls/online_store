@@ -4,10 +4,10 @@ using System.Collections.ObjectModel;
 using System.ComponentModel;
 using System.Linq;
 using System.Runtime.CompilerServices;
-using WpfShopApp.Models.Enums;
-using WpfShopApp.Services;
+using ProjectStore.Models.Enums;
+using ProjectStore.Services;
 
-namespace WpfShopApp.Models;
+namespace ProjectStore.Models;
 
 public class Order : Entity, INotifyPropertyChanged
 {

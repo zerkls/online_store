@@ -4,10 +4,10 @@
     <OutputType>WinExe</OutputType>
     <TargetFramework>net6.0-windows</TargetFramework>
 	 <UseWPF>true</UseWPF>
-	 <StartupObject>WpfShopApp.App</StartupObject>
+	 <StartupObject>ProjectStore.App</StartupObject>
 	 <AssemblyTitle>WPF Shop Application</AssemblyTitle>
 	 <AssemblyDescription>Интернет-магазин на WPF с MVVM</AssemblyDescription>
 	 <AssemblyVersion>1.0.0.0</AssemblyVersion>
   </PropertyGroup>
-
+	
 </Project>

@@ -1,22 +1,20 @@
-﻿<Window x:Class="WpfShopApp.Views.OrdersWindow"
+﻿<Window x:Class="ProjectStore.Views.OrdersWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:vm="clr-namespace:WpfShopApp.ViewModels"
-        xmlns:conv="clr-namespace:WpfShopApp.Converters"
-        xmlns:models="clr-namespace:WpfShopApp.Models"
+        xmlns:vm="clr-namespace:ProjectStore.ViewModels"
+        xmlns:conv="clr-namespace:ProjectStore.Converters"
+        xmlns:models="clr-namespace:ProjectStore.Models"
         mc:Ignorable="d"
         Title="История заказов" Height="700" Width="900"
         WindowStartupLocation="CenterOwner"
         Background="#F5F7FA">
 
     <Window.Resources>
-        <!-- Конвертеры -->
-        <conv:BooleanToVisibilityConverter x:Key="BoolToVisibility"/>
-        <conv:InvertedBoolToVisibilityConverter x:Key="InvertedBoolToVisibility"/>
-        <conv:OrderStatusToColorConverter x:Key="OrderStatusToColor"/>
-
+		<conv:BooleanToVisibilityConverter x:Key="BoolToVisibility"/>
+		<conv:InvertedBoolToVisibilityConverter x:Key="InvertedBoolToVisibility"/>
+		<conv:OrderStatusToColorConverter x:Key="OrderStatusToColor"/>
         <!-- Стиль для элементов списка заказов -->
         <Style x:Key="OrderItemStyle" TargetType="ListBoxItem">
             <Setter Property="Padding" Value="12"/>

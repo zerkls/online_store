@@ -2,9 +2,9 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Linq;
 using System.Windows.Input;
-using WpfShopApp.Models;
+using ProjectStore.Models;
 
-namespace WpfShopApp.ViewModels;
+namespace ProjectStore.ViewModels;
 
 public class OrdersViewModel : INotifyPropertyChanged
 {

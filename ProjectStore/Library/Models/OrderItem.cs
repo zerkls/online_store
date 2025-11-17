@@ -1,7 +1,7 @@
 ﻿using System.ComponentModel;
 using System.Runtime.CompilerServices;
 
-namespace WpfShopApp.Models;
+namespace ProjectStore.Models;
 /// <summary>
 /// Элемент заказа - демонстрирует композицию
 /// </summary>

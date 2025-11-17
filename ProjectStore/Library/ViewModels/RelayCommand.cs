@@ -1,7 +1,7 @@
 using System;
 using System.Windows.Input;
 
-namespace WpfShopApp.ViewModels;
+namespace ProjectStore.ViewModels;
 
 public class RelayCommand : ICommand
 {

@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace WpfShopApp.Services
+namespace ProjectStore.Services
 {
     public class CreditCardPayment : IPaymentService
     {

@@ -1,6 +1,6 @@
 using System.Windows;
 
-namespace WpfShopApp.Views;
+namespace ProjectStore.Views;
 
 public partial class MainWindow : Window
 {

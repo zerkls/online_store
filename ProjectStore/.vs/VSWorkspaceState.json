@@ -1,8 +1,9 @@
 {
   "ExpandedNodes": [
     "",
-    "\\Library"
+    "\\Library",
+    "\\Library\\Converters",
+    "\\Library\\Views"
   ],
-  "SelectedNode": "\\Library\\Services",
   "PreviewInSolutionExplorer": false
 }
